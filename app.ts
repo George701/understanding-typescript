@@ -56,3 +56,46 @@ function multiply(x: number, y: number): number {
 let myMultiply: (a: number, b: number) => number;
 // myMultiply = sayHello;
 myMultiply = multiply;
+
+// objects
+let userData: { name: string, age: number } = {
+    name: 'Max',
+    age: 27
+};
+
+// complex object
+let complex: { data: number[], output: (all: boolean) => number[] } = {
+    data: [100, 3.39, 10],
+    output: function (all: boolean): number[] {
+        return this.data;
+    }
+}
+
+// type alias (custom types)
+type Complex = { data: number[], output: (all: boolean) => number[] };
+
+let complex2: Complex = {
+    data: [100, 3.39, 10],
+    output: function (all: boolean): number[] {
+        return this.data;
+    }
+}
+
+// union types
+let myRealTrueAge: number | string = 27;
+myRealTrueAge = '23';
+
+// check types
+let finalValue = 'A string';
+typeof finalValue === 'string' && console.log('Final value is a string')
+
+// never
+function neverReturns(): never {
+    throw new Error('An error!');
+}
+
+// Nullable Types
+let canBeNull: number | null = 12;
+canBeNull = null;
+let canAlsoBeNull;
+canAlsoBeNull = null;

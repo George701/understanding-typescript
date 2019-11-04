@@ -46,3 +46,36 @@ function multiply(x, y) {
 var myMultiply;
 // myMultiply = sayHello;
 myMultiply = multiply;
+// objects
+var userData = {
+    name: 'Max',
+    age: 27
+};
+// complex object
+var complex = {
+    data: [100, 3.39, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.39, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealTrueAge = 27;
+myRealTrueAge = '23';
+// check types
+var finalValue = 'A string';
+typeof finalValue === 'string' && console.log('Final value is a string');
+// never
+function neverReturns() {
+    throw new Error('An error!');
+}
+// Nullable Types
+var canBeNull = 12;
+canBeNull = null;
+var canAlsoBeNull;
+canAlsoBeNull = null;
