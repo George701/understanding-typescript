@@ -11,4 +11,4 @@ var myself = {
     hobbies: ["Sports", "Cooking"]
 };
 myself.bankAccount.deposit(3000);
-console.log(myself);
+// console.log(myself);

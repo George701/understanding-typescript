@@ -87,7 +87,7 @@ myRealTrueAge = '23';
 
 // check types
 let finalValue = 'A string';
-typeof finalValue === 'string' && console.log('Final value is a string')
+// typeof finalValue === 'string' && console.log('Final value is a string')
 
 // never
 function neverReturns(): never {
